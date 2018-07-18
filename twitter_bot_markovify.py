@@ -47,7 +47,7 @@ def textproduce():
             print("Text procudce completed")
             fileoutput.close
             break
-        except ConnectionError:
+        except TweepError:
             print("ConnectionError, trying again.") 
 
 
@@ -68,7 +68,7 @@ def randomtweet():
                     pass
             api.update_status(newtweet)
             break
-        except ConnectionError:
+        except TweepError:
             print("ConnectionError, trying again.") 
 
 def textproduce_b():
@@ -103,7 +103,7 @@ def textproduce_b():
                 else:
                     checkpoint = 1     
             break
-        except ConnectionError:
+        except TweepError:
             print("ConnectionError, trying again.") 
 
 
@@ -129,7 +129,7 @@ def randomtweet_b():
                     pass
             api.update_status(newtweet)
             break
-        except ConnectionError:
+        except TweepError:
             print("ConectionError, trying again.")
             
 
