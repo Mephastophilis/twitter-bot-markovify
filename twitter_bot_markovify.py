@@ -44,7 +44,7 @@ def textproduce():
                     tweettext = re.sub('&amp', '', tweettext)
                     tweettext = re.sub('\n',' ',tweettext)
                     fileoutput.write(tweettext + ' ')
-            print("Text procudce completed")
+            print("Text produce completed")
             fileoutput.close
             break
         except tweepy.TweepError:
@@ -145,5 +145,5 @@ while True:
         randomtweet_b()
         tweetcount=tweetcount+1
         print('tweet count = ' + str(tweetcount) + '. Model B used.')
-        time.sleep(random.randint(40,100))
-    time.sleep(300)
+        time.sleep(random.randint(200,400))
+    time.sleep(600)
